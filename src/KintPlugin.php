@@ -15,10 +15,10 @@ class KintPlugin extends Plugin
     public function getFilters()
     {
         return [
-            new \Twig_SimpleFilter( 'd',   function ($p) {return d($p);}),
-            new \Twig_SimpleFilter( 'ddd', function ($p) {return ddd($p);}),
-            new \Twig_SimpleFilter( 's',   function ($p) {return s($p);}),
-            new \Twig_SimpleFilter( 'sd',  function ($p) {return sd($p);}),
+            new \Twig_SimpleFilter( 'd',   function ($p) {return d($p);},['is_safe' => ['html']]),
+            new \Twig_SimpleFilter( 'ddd', function ($p) {return ddd($p);},['is_safe' => ['html']]),
+            new \Twig_SimpleFilter( 's',   function ($p) {return s($p);},['is_safe' => ['html']]),
+            new \Twig_SimpleFilter( 'sd',  function ($p) {return sd($p);},['is_safe' => ['html']]),
         ];
     }
 
@@ -30,10 +30,10 @@ class KintPlugin extends Plugin
     public function getFunctions()
     {
         return [
-            new \Twig_SimpleFunction( 'd',   function ($p) {return d($p);}),
-            new \Twig_SimpleFunction( 'ddd', function ($p) {return ddd($p);}),
-            new \Twig_SimpleFunction( 's',   function ($p) {return s($p);}),
-            new \Twig_SimpleFunction( 'sd',  function ($p) {return sd($p);}),
+            new \Twig_SimpleFunction( 'd',   function ($p) {return d($p);},['is_safe' => ['html']]),
+            new \Twig_SimpleFunction( 'ddd', function ($p) {return ddd($p);},['is_safe' => ['html']]),
+            new \Twig_SimpleFunction( 's',   function ($p) {return s($p);},['is_safe' => ['html']]),
+            new \Twig_SimpleFunction( 'sd',  function ($p) {return sd($p);},['is_safe' => ['html']]),
         ];
     }
 
