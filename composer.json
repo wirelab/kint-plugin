@@ -1,0 +1,33 @@
+{
+    "name": "wirelab/kint-plugin",
+    "type": "streams-addon",
+    "description": "Better debugging for PyroCMS 3",
+    "keywords": [
+        "wirelab",
+        "kint",
+        "pyrocms",
+        "pyrocms 3",
+        "kint plugin"
+    ],
+    "homepage": "http://wirelab.nl/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wirelab",
+            "email": "algemeen@wirelab.nl",
+            "homepage": "http://www.wirelab.nl/",
+            "role": "Owner"
+        }
+    ],
+    "support": {
+        "email": "algemeen@wirelab.nl"
+    },
+    "require": {
+        "rtconner/laravel-kint": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wirelab\\KintPlugin\\": "src/"
+        }
+    }
+}
