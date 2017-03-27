@@ -22,4 +22,4 @@ sd(your_variable)
 2. `php artisan vendor:publish`
 3. In `config/kint.php` change `maxLevels` to `3`
 
-For more details please see [laravel-kind](https://github.com/rtconner/laravel-kint/tree/laravel-5)
+For more details please see [laravel-kint](https://github.com/rtconner/laravel-kint/tree/laravel-5)
