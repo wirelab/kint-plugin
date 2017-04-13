@@ -30,10 +30,10 @@ class KintPlugin extends Plugin
     public function getFunctions()
     {
         return [
-            new \Twig_SimpleFunction( 'd',   function ($p) {return d($p);},['is_safe' => ['html']]),
-            new \Twig_SimpleFunction( 'ddd', function ($p) {return ddd($p);},['is_safe' => ['html']]),
-            new \Twig_SimpleFunction( 's',   function ($p) {return s($p);},['is_safe' => ['html']]),
-            new \Twig_SimpleFunction( 'sd',  function ($p) {return sd($p);},['is_safe' => ['html']]),
+            new \Twig_SimpleFunction( 'd',   function ($p, $return = false) {return $return ? @d($p) : d($p);},['is_safe' => ['html']]),
+            new \Twig_SimpleFunction( 'ddd', function ($p, $return = false) {return $return ? @ddd($p) : ddd($p);},['is_safe' => ['html']]),
+            new \Twig_SimpleFunction( 's',   function ($p, $return = false) {return $return ? @s($p) : s($p);},['is_safe' => ['html']]),
+            new \Twig_SimpleFunction( 'sd',  function ($p, $return = false) {return $return ? @sd($p) : sd($p);},['is_safe' => ['html']]),
         ];
     }
 
