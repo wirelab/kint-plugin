@@ -1,4 +1,5 @@
 # Kint plugin
+## ⚠️ This repository has been deprecated ⚠️
 Better debugging for PyroCMS 3
 
 ## Installation
